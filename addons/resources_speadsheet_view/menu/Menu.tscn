@@ -1,0 +1,249 @@
+[gd_scene load_steps=6 format=2]
+
+[ext_resource path="res://addons/resources_speadsheet_view/editor_icon_button.gd" type="Script" id=1]
+[ext_resource path="res://addons/resources_speadsheet_view/menu/Menu.gd" type="Script" id=2]
+[ext_resource path="res://addons/resources_speadsheet_view/menu/Settings.tscn" type="PackedScene" id=3]
+
+[sub_resource type="Image" id=3]
+data = {
+"data": PoolByteArray( 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ),
+"format": "LumAlpha8",
+"height": 16,
+"mipmaps": false,
+"width": 16
+}
+
+[sub_resource type="ImageTexture" id=2]
+flags = 4
+flags = 4
+image = SubResource( 3 )
+size = Vector2( 16, 16 )
+
+[node name="Menu" type="VBoxContainer"]
+margin_right = 1020.0
+margin_bottom = 46.0
+custom_constants/separation = 2
+script = ExtResource( 2 )
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="HBoxContainer2" type="HBoxContainer" parent="."]
+margin_right = 1020.0
+margin_bottom = 20.0
+
+[node name="VisibleCols" type="MenuButton" parent="HBoxContainer2"]
+margin_right = 68.0
+margin_bottom = 20.0
+hint_tooltip = "Hide/Show Columns"
+focus_mode = 2
+text = "Columns"
+
+[node name="Settings" type="Button" parent="HBoxContainer2"]
+margin_left = 72.0
+margin_right = 135.0
+margin_bottom = 20.0
+hint_tooltip = "Settings"
+text = "Settings"
+flat = true
+
+[node name="Info" type="Button" parent="HBoxContainer2"]
+margin_left = 139.0
+margin_right = 189.0
+margin_bottom = 20.0
+text = "About"
+flat = true
+
+[node name="Control" type="Control" parent="HBoxContainer2"]
+margin_left = 193.0
+margin_right = 1020.0
+margin_bottom = 20.0
+size_flags_horizontal = 3
+
+[node name="HBoxContainer" type="HSplitContainer" parent="."]
+margin_top = 22.0
+margin_right = 1020.0
+margin_bottom = 46.0
+split_offset = -249
+
+[node name="HBoxContainer" type="HBoxContainer" parent="HBoxContainer"]
+margin_right = 631.0
+margin_bottom = 24.0
+size_flags_horizontal = 3
+custom_constants/separation = 0
+
+[node name="Label" type="Label" parent="HBoxContainer/HBoxContainer"]
+margin_top = 5.0
+margin_right = 107.0
+margin_bottom = 19.0
+text = "Resource Folder:"
+
+[node name="Path" type="LineEdit" parent="HBoxContainer/HBoxContainer"]
+unique_name_in_owner = true
+margin_left = 107.0
+margin_right = 547.0
+margin_bottom = 24.0
+size_flags_horizontal = 3
+caret_blink = true
+caret_blink_speed = 0.5
+
+[node name="SelectDir" type="Button" parent="HBoxContainer/HBoxContainer"]
+margin_left = 547.0
+margin_right = 575.0
+margin_bottom = 24.0
+hint_tooltip = "Open Folder"
+icon = SubResource( 2 )
+script = ExtResource( 1 )
+icon_name = "Folder"
+
+[node name="Refresh" type="Button" parent="HBoxContainer/HBoxContainer"]
+margin_left = 575.0
+margin_right = 603.0
+margin_bottom = 24.0
+hint_tooltip = "Refresh"
+icon = SubResource( 2 )
+script = ExtResource( 1 )
+icon_name = "Refresh"
+
+[node name="DeletePath" type="Button" parent="HBoxContainer/HBoxContainer"]
+margin_left = 603.0
+margin_right = 631.0
+margin_bottom = 24.0
+hint_tooltip = "Remove Path from Recent"
+icon = SubResource( 2 )
+script = ExtResource( 1 )
+icon_name = "Remove"
+
+[node name="HBoxContainer2" type="HBoxContainer" parent="HBoxContainer"]
+margin_left = 643.0
+margin_right = 1020.0
+margin_bottom = 24.0
+
+[node name="Label2" type="Label" parent="HBoxContainer/HBoxContainer2"]
+margin_top = 5.0
+margin_right = 87.0
+margin_bottom = 19.0
+text = "Open Recent:"
+
+[node name="RecentPaths" type="OptionButton" parent="HBoxContainer/HBoxContainer2"]
+unique_name_in_owner = true
+margin_left = 91.0
+margin_right = 369.0
+margin_bottom = 24.0
+size_flags_horizontal = 3
+clip_text = true
+
+[node name="VSeparator" type="VSeparator" parent="HBoxContainer/HBoxContainer2"]
+margin_left = 373.0
+margin_right = 377.0
+margin_bottom = 24.0
+
+[node name="Sep" type="Control" parent="."]
+margin_top = 48.0
+margin_right = 1020.0
+margin_bottom = 48.0
+
+[node name="Columns" type="Control" parent="."]
+margin_top = 50.0
+margin_right = 1020.0
+margin_bottom = 50.0
+rect_clip_content = true
+
+[node name="Columns" type="Control" parent="Columns"]
+margin_right = 1020.0
+
+[node name="Sep2" type="Control" parent="."]
+margin_top = 52.0
+margin_right = 1020.0
+margin_bottom = 52.0
+
+[node name="Node" type="Node" parent="."]
+
+[node name="SelectDirectory" type="FileDialog" parent="Node"]
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+margin_left = -282.5
+margin_top = -161.5
+margin_right = 282.5
+margin_bottom = 161.5
+window_title = "Open a Directory"
+dialog_hide_on_ok = true
+mode = 2
+filters = PoolStringArray( "res; Resource", "tres; Resource" )
+
+[node name="Info" type="AcceptDialog" parent="Node"]
+unique_name_in_owner = true
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+margin_left = -320.0
+margin_top = -152.0
+margin_right = 320.0
+margin_bottom = 152.0
+window_title = "About"
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="MarginContainer" type="MarginContainer" parent="Node/Info"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+margin_left = 8.0
+margin_top = 8.0
+margin_right = -8.0
+margin_bottom = -36.0
+
+[node name="RichTextLabel" type="RichTextLabel" parent="Node/Info/MarginContainer"]
+margin_right = 624.0
+margin_bottom = 260.0
+bbcode_enabled = true
+bbcode_text = "[center]Edit Resources as Spreadsheet[/center]
+
+\"Welp, it is what it sounds like!\"
+
+Possible inputs:
+- [code]Ctrl + Click / Cmd + Click[/code] - Select multiple cells in one column
+- [code]Shift + Click[/code] - Select all cells between A and B in one column
+- [code]Left/Right[/code] - Move cursor along cell text
+- [code]Backspace/Delete[/code] - Erase text Left / Right from cursor
+- [code]Home/End[/code] - Move cursor to start/end of cell
+- [code]Ctrl + <move/erase> / Cmd + <move/erase>[/code] - Move through / Erase whole word
+- [code]Ctrl/Cmd + C/V[/code] - Copy cells / Paste text into cells 
+- [code]Ctrl/Cmd + (Shift) + Z[/code] - The Savior 
+If clipboard contains as many lines as there are cells selected, each line is pasted into a separate cell.
+
+Made by Don Tnowe. 2022.
+[url]https://twitter.com/don_tnowe[/url]
+Issues and contribution:
+[url]https://github.com/don-tnowe/godot-resources-as-sheets-plugin[/url]"
+text = "Edit Resources as Spreadsheet
+
+\"Welp, it is what it sounds like!\"
+
+Possible inputs:
+- Ctrl + Click / Cmd + Click - Select multiple cells in one column
+- Shift + Click - Select all cells between A and B in one column
+- Left/Right - Move cursor along cell text
+- Backspace/Delete - Erase text Left / Right from cursor
+- Home/End - Move cursor to start/end of cell
+- Ctrl + <move/erase> / Cmd + <move/erase> - Move through / Erase whole word
+- Ctrl/Cmd + C/V - Copy cells / Paste text into cells 
+- Ctrl/Cmd + (Shift) + Z - The Savior 
+If clipboard contains as many lines as there are cells selected, each line is pasted into a separate cell.
+
+Made by Don Tnowe. 2022.
+https://twitter.com/don_tnowe
+Issues and contribution:
+https://github.com/don-tnowe/godot-resources-as-sheets-plugin"
+
+[node name="Settings" parent="Node" instance=ExtResource( 3 )]
+
+[connection signal="pressed" from="HBoxContainer2/Settings" to="." method="_on_Settings_pressed"]
+[connection signal="pressed" from="HBoxContainer2/Info" to="." method="_on_Info_pressed"]
+[connection signal="pressed" from="HBoxContainer/HBoxContainer/SelectDir" to="." method="_on_SelectDir_pressed"]
+[connection signal="pressed" from="HBoxContainer/HBoxContainer/Refresh" to="." method="_on_Refresh_pressed"]
+[connection signal="pressed" from="HBoxContainer/HBoxContainer/DeletePath" to="." method="_on_DeletePath_pressed"]
+[connection signal="dir_selected" from="Node/SelectDirectory" to="." method="_on_SelectDirectory_dir_selected"]
